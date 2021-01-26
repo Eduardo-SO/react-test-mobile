@@ -127,7 +127,7 @@ export const LoginTitle = styled.Text`
   max-width: 400px;
   margin-bottom: 32px;
   font-size: 72px;
-  color: #fff;
+  color: #ffffff;
 `
 
 export const LoginDescription = styled.Text`
@@ -138,23 +138,19 @@ export const LoginDescription = styled.Text`
   line-height: 27px;
 `
 
-export const LoginLink = styled.Text`
+export const LoginLink = styled.TouchableOpacity`
   width: 200px;
   padding: 8px 30px;
   border-radius: 40px;
   border: 2px solid transparent;
 
   background: #1db954;
+`
+export const LoginLinkText = styled.Text`
   color: #000;
 
   text-align: center;
   font-weight: bold;
-
-  &:hover {
-    background: transparent;
-    color: #fff;
-    border: 2px solid #1db954;
-  }
 `
 
 export const AccessDenied = styled.Text`

@@ -3,6 +3,7 @@ import React, {
   //  useEffect,
   useState
 } from 'react'
+
 // import axios from 'axios'
 
 // import formatDate from './utils/formatDate'
@@ -20,6 +21,7 @@ import {
   LoginTitle,
   LoginDescription,
   LoginLink,
+  LoginLinkText,
   AccessDenied
 } from './styles/index'
 
@@ -242,7 +244,9 @@ const Home: React.FC = () => {
           Autorize a sua conta do Spotify para visualizar as playlists em
           destaque.
         </LoginDescription>
-        <LoginLink>Autorizar</LoginLink>
+        <LoginLink>
+          <LoginLinkText>Autorizar</LoginLinkText>
+        </LoginLink>
 
         {spotifyResponseDenied && (
           <AccessDenied>
