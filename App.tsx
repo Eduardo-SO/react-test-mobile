@@ -1,7 +1,11 @@
-import React, { useCallback, useEffect, useState } from 'react'
-import axios from 'axios'
+import React, {
+  // useCallback,
+  //  useEffect,
+  useState
+} from 'react'
+// import axios from 'axios'
 
-import formatDate from './utils/formatDate'
+// import formatDate from './utils/formatDate'
 
 import {
   Container,
@@ -238,11 +242,7 @@ const Home: React.FC = () => {
           Autorize a sua conta do Spotify para visualizar as playlists em
           destaque.
         </LoginDescription>
-        <LoginLink
-        // href="https://accounts.spotify.com/authorize?client_id=50eb067b28e0491380591d6b7884165d&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F&response_type=token"
-        >
-          Autorizar
-        </LoginLink>
+        <LoginLink>Autorizar</LoginLink>
 
         {spotifyResponseDenied && (
           <AccessDenied>
